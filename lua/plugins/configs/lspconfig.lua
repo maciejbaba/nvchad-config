@@ -78,10 +78,17 @@ require("lspconfig").phpactor.setup {
 }
 
 
+-- below parts for the lsps to work
 -- Setup language servers.
 local lspconfig = require('lspconfig')
 lspconfig.pyright.setup {}
 lspconfig.tsserver.setup {}
+lspconfig.phpactor.setup {}
+lspconfig.powershell_es.setup{
+  filetypes = {"ps1", "psm1", "psd1"},
+  bundle_path = "/powershell_es",
+  shell = "pwsh"
+}
 lspconfig.rust_analyzer.setup {
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
