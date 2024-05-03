@@ -9,6 +9,8 @@ end
 -- in order for the clipboard to work
 vim.opt.clipboard = "unnamedplus"
 
+vim.g.python3_host_prog = "/usr/bin/python3"
+
 require("core.utils").load_mappings()
 
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"

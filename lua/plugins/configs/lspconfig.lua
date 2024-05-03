@@ -84,6 +84,7 @@ local lspconfig = require('lspconfig')
 lspconfig.pyright.setup {}
 lspconfig.tsserver.setup {}
 lspconfig.phpactor.setup {}
+lspconfig.gopls.setup {}
 lspconfig.powershell_es.setup{
   filetypes = {"ps1", "psm1", "psd1"},
   bundle_path = "/powershell_es",
